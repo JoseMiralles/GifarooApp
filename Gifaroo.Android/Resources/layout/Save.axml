@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:gravity="center"
+    android:id="@+id/mainSaveLayout">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveLayout"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:layout_margin="10dp">
+        <TextView
+            android:text="Saved!"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:background="#ff21242e" />
+        <TextView
+            android:text="Your masterpiece was saved to your &quot;Movies&quot; folder! Tap the &quot;Share&quot; button below to share it."
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:gravity="left"
+            android:ellipsize="none"
+            android:textColor="#ff21242e"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="10dp" />
+        <Button
+            android:text="share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shareButton" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/adLinearLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:maxWidth="400dp"
+        android:background="@android:color/white">
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ImageRelativeLayout">
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:id="@+id/secHqImage"
+                android:layout_width="300dp"
+                android:layout_height="156dp"
+                android:minHeight="100dp" />
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:paddingTop="5dp"
+                android:layout_below="@+id/secHqImage"
+                android:background="#ffffffff"
+                android:paddingBottom="5dp">
+                <ImageView
+                    android:src="@android:drawable/ic_menu_gallery"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/secImage"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="3dp" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout1"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/secImage"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp">
+                    <TextView
+                        android:text="Fun and Convenient, Your Journey is a Tap Away"
+                        android:id="@+id/summary"
+                        android:textAppearance="@android:style/TextAppearance.Material.Caption"
+                        android:textColor="@android:color/black"
+                        android:textStyle="italic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="By QUICKRIDERS"
+                        android:id="@+id/source"
+                        android:textAppearance="@android:style/TextAppearance.Material.Caption"
+                        android:textColor="#ff9e9e9e"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/SponsoredLinearLayout"
+                android:paddingLeft="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foreground="#ba212121"
+                android:background="#c9000000">
+                <TextView
+                    android:text="Get a Ride When You Need It"
+                    android:id="@+id/headline"
+                    android:textAppearance="@android:style/TextAppearance.Material.Caption"
+                    android:textStyle="bold"
+                    android:padding="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical" />
+                <TextView
+                    android:text="Ad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView3"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:textColor="@android:color/white" />
+                <ImageView
+                    android:src="@android:drawable/ic_menu_gallery"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/secBrandingLogo" />
+            </LinearLayout>
+        </RelativeLayout>
+        <Button
+            android:text="Learn More"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/callToAction " />
+    </LinearLayout>
+</LinearLayout>

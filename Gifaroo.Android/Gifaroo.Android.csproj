@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{09266C62-3873-4377-AA9B-BFCB6489BD7E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Gifaroo.Android</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AssemblyName>Gifaroo.Android</AssemblyName>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkSkip />
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <BundleAssemblies>False</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+    <AndroidSupportedAbis>
+    </AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <Debugger>Xamarin</Debugger>
+    <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86,x86_64,arm64-v8a</AndroidSupportedAbis>
+    <AndroidLinkSkip>Xamarin.InAppBilling</AndroidLinkSkip>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <BundleAssemblies>False</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <Debugger>Xamarin</Debugger>
+    <AotAssemblies>False</AotAssemblies>
+    <EnableLLVM>False</EnableLLVM>
+    <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
+    <EnableProguard>False</EnableProguard>
+    <DebugSymbols>False</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AndroidQuery, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\AndroidQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Flurry.Ads.Android">
+      <HintPath>..\packages\Flurry.Ads.2.0.0\lib\MonoAndroid10\Flurry.Ads.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Flurry.Analytics.Android">
+      <HintPath>..\packages\Flurry.Analytics.2.0.0\lib\MonoAndroid10\Flurry.Analytics.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Xamarin.GooglePlayServices.Analytics">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Analytics.27.0.0.0\lib\MonoAndroid41\Xamarin.GooglePlayServices.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.InAppBilling">
+      <HintPath>..\Components\xamarin.inappbilling-2.2\lib\android\Xamarin.InAppBilling.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.0.1.3\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Basement">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Basement.27.0.0.0\lib\MonoAndroid41\Xamarin.GooglePlayServices.Basement.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.AppIndexing">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.AppIndexing.27.0.0.0\lib\MonoAndroid41\Xamarin.GooglePlayServices.AppIndexing.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Ads">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Ads.27.0.0.0\lib\MonoAndroid41\Xamarin.GooglePlayServices.Ads.dll</HintPath>
+    </Reference>
+    <Reference Include="XamarinStickerView">
+      <HintPath>..\..\..\Documents\GitHub\XamarinStickerView\XamarinStickerView\obj\Debug\XamarinStickerView.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Classes\LazyLoadAdapter__Original.cs" />
+    <Compile Include="Classes\Editor.cs" />
+    <Compile Include="Classes\GBroadcastReceiver.cs" />
+    <Compile Include="Classes\PremiumInterface.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\TrackingInterface.cs" />
+    <Compile Include="GifGalleryActivity.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GifarooTools.cs" />
+    <Compile Include="EditGifActivity.cs" />
+    <Compile Include="Classes\LazyLoadAdapter.cs" />
+    <Compile Include="SaveActivity.cs" />
+    <Compile Include="Classes\FffmpegTools.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="libs\AndroidQuery.dll" />
+    <None Include="obj\Release\android\com\github\hiteshsondhi88\libffmpeg\R.java" />
+    <None Include="Jars\ffmpegandroid.aar" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\GifGallery.axml" />
+    <AndroidResource Include="Resources\drawable\Gifarooprogressbar.gif" />
+    <AndroidResource Include="Resources\menu\menu.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ic_action_download.png" />
+    <AndroidResource Include="Resources\drawable\ic_action_edit.png" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\drawable\scaledBackground.xml" />
+    <AndroidResource Include="Resources\drawable\GifarooActionbarBackground.png" />
+    <AndroidResource Include="Resources\layout\EditGif.axml" />
+    <AndroidResource Include="Resources\drawable\GifarooBackgroundTile.jpg" />
+    <AndroidResource Include="Resources\drawable\bucket.png" />
+    <AndroidResource Include="Resources\drawable\actionbar_tab_indicator.xml" />
+    <AndroidResource Include="Resources\drawable\GifarooActionbarBackgroundflat.png" />
+    <AndroidResource Include="Resources\drawable\GifarooSelectedTabBackground.png" />
+    <AndroidResource Include="Resources\drawable\effects.png" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_1.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_2.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_3.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_4.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_5.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_6.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_7.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_8.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_9.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_blur_1.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_blur_2.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_blur_3.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_blur_4.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_blur_5.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_blur_6.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_blur_7.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_blur_8.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_Gradient_1.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_Gradient_2.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_Gradient_3.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_Gradient_4.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_Gradient_5.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_Gradient_6.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_Gradient_7.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_Gradient_8.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_Gradient_9.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_1.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_2.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_3.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_4.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_5.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_6.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_7.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_8.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_9.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_10.jpg" />
+    <AndroidResource Include="Resources\drawable\HighlightOutline.png" />
+    <AndroidResource Include="Resources\drawable\InvisibleDrawable.png" />
+    <AndroidResource Include="Resources\drawable\bg_blur_9.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_blur_10.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_blur_11.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_blur_12.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_blur_13.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_blur_14.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_blur_15.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_blur_16.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_blur_17.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_Gradient_10.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_Gradient_11.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_Gradient_12.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_Gradient_13.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_Gradient_14.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_Gradient_15.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_Gradient_16.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_Gradient_17.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_Gradient_18.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_Gradient_19.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_Gradient_20.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_Gradient_21.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_11.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_12.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_13.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_14.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_15.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_16.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_17.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_18.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_19.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_20.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_21.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_22.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_23.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_24.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_pattern_25.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_10.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_11.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_12.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_13.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_14.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_15.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_16.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_17.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_18.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_19.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_20.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_21.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_22.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_23.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_shapes_24.jpg" />
+    <AndroidResource Include="Resources\drawable\bgTitle_Blurs.png" />
+    <AndroidResource Include="Resources\drawable\bgTitle_Colors.png" />
+    <AndroidResource Include="Resources\drawable\bgTitle_Gradients.png" />
+    <AndroidResource Include="Resources\drawable\bgTitle_Night.png" />
+    <AndroidResource Include="Resources\drawable\bgTitle_Patterns.png" />
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\layout\Save.axml" />
+    <AndroidResource Include="Resources\drawable\bg_gifaroo_1.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_gifaroo_2.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_gifaroo_3.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_gifaroo_4.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_gifaroo_5.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_gifaroo_6.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_gifaroo_7.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_gifaroo_8.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_gifaroo_9.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_gifaroo_10.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_gifaroo_11.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_gifaroo_12.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_gifaroo_13.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_gifaroo_14.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_gifaroo_15.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_gifaroo_16.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_gifaroo_17.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_gifaroo_18.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_gifaroo_19.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_gifaroo_20.jpg" />
+    <AndroidResource Include="Resources\drawable\bgTitle_Gifaroo.png" />
+    <AndroidResource Include="Resources\drawable\bg_gifaroo_21.jpg" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable\loading_placeholder.png" />
+    <AndroidResource Include="Resources\drawable\inappicon.png" />
+    <AndroidResource Include="Resources\drawable\GifarooActionbarBackgroundflatTop.png" />
+    <AndroidResource Include="Resources\layout\BackgroundItemsLayout.axml" />
+    <AndroidResource Include="Resources\drawable\ic_action_gifaroo_plus.png" />
+    <AndroidResource Include="Resources\drawable\ic_action_gifaroo_plus_stamp.png" />
+    <AndroidResource Include="Resources\drawable\bgTitle_Fonts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fonts\Amatic.ttf" />
+    <AndroidAsset Include="Assets\fonts\Anton.ttf" />
+    <AndroidAsset Include="Assets\fonts\Bangers.ttf" />
+    <AndroidAsset Include="Assets\fonts\Chewy.ttf" />
+    <AndroidAsset Include="Assets\fonts\CinzelDecorative.ttf" />
+    <AndroidAsset Include="Assets\fonts\CourgetteRegular.ttf" />
+    <AndroidAsset Include="Assets\fonts\CraftyGirls.ttf" />
+    <AndroidAsset Include="Assets\fonts\FrederickatheGreat.ttf" />
+    <AndroidAsset Include="Assets\fonts\GloriaHallelujah.ttf" />
+    <AndroidAsset Include="Assets\fonts\IndieFlower.ttf" />
+    <AndroidAsset Include="Assets\fonts\KaushanScript.ttf" />
+    <AndroidAsset Include="Assets\fonts\LeckerliOne.ttf" />
+    <AndroidAsset Include="Assets\fonts\Lobster.ttf" />
+    <AndroidAsset Include="Assets\fonts\Megrim.ttf" />
+    <AndroidAsset Include="Assets\fonts\Monoton.ttf" />
+    <AndroidAsset Include="Assets\fonts\OpenSans.ttf" />
+    <AndroidAsset Include="Assets\fonts\Orbitron.ttf" />
+    <AndroidAsset Include="Assets\fonts\Pacifico.ttf" />
+    <AndroidAsset Include="Assets\fonts\PoiretOne.ttf" />
+    <AndroidAsset Include="Assets\fonts\Righteous.ttf" />
+    <AndroidAsset Include="Assets\fonts\Sacramento.ttf" />
+    <AndroidAsset Include="Assets\fonts\SixCaps.ttf" />
+    <AndroidAsset Include="Assets\10sec.mp3" />
+    <AndroidAsset Include="Assets\fonts_animation_homepage\gifaroo-fonts-background_1.png" />
+    <AndroidAsset Include="Assets\fonts_animation_homepage\index.html" />
+    <AndroidAsset Include="Assets\gradient_nights_animation_homepage\index.html" />
+    <AndroidAsset Include="Assets\gradient_nights_animation_homepage\rotatingImage.jpg" />
+    <AndroidAsset Include="Assets\blur_patters_animation_homepage\index.html" />
+    <AndroidAsset Include="Assets\blur_patters_animation_homepage\rotatingImage.jpg" />
+    <AndroidAsset Include="Assets\gradient_nights_animation_homepage\title.png" />
+    <AndroidAsset Include="Assets\blur_patters_animation_homepage\title.png" />
+    <AndroidAsset Include="Assets\fonts_animation_homepage\title.png" />
+    <AndroidAsset Include="Assets\armeabi-v7a\ffmpeg" />
+    <AndroidAsset Include="Assets\armeabi-v7a-neon\ffmpeg" />
+    <AndroidAsset Include="Assets\x86\ffmpeg" />
+    <AndroidAsset Include="Assets\fonts_animation_homepage\cog1.png" />
+    <AndroidAsset Include="Assets\fonts_animation_homepage\cog2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="Flurry.Ads">
+      <Visible>False</Visible>
+      <Version>2.0.0</Version>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="googleplayservices-analytics">
+      <Visible>False</Visible>
+      <Version>27.0.0.0</Version>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="xamarin.inappbilling">
+      <Version>2.2</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Documents\Xamarin Projects\ffmpegAndroidJava\ffmpegAndroidJava\ffmpegAndroidJava.csproj">
+      <Project>{A103F6C6-D936-41C4-B5AB-81E3106F95FB}</Project>
+      <Name>ffmpegAndroidJava</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup>
+    <None Include="save.java" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidJavaSource Include="loadffmpeg.java" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\new_home_page\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\new_home_page\css\style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_format_color_fill_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_home_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_save_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_text_fields_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_format_color_fill_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_home_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_save_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_text_fields_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_format_color_fill_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_home_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_save_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_text_fields_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_format_color_fill_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_home_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_save_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_text_fields_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_format_color_fill_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_home_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_save_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_text_fields_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_gifaroo_store_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\ic_gifaroo_store_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_gifaroo_store_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_gifaroo_store_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_gifaroo_store_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\customBorder.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\new_home_page\img\giphy_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\new_home_page\img\home_text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\new_home_page\img\instructions-background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\new_home_page\img\tapAndHold.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\new_home_page\img\url-instructions-background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\new_home_page\img\yellow_cluster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\gifaroologomobileheader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\gifaroologomobileheader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\gifaroologomobileheader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\gifaroologomobileheader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxxhdpi\gifaroologomobileheader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\deleteX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\spanscale.png" />
+  </ItemGroup>
+</Project>

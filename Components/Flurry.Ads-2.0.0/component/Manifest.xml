@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<component format="1" id="Flurry.Ads" is-shell="true">
+  <name>Flurry Ads (Yahoo App Publishing)</name>
+  <publisher>Matthew Leibowitz</publisher>
+  <publisher-url>http://www.twitter.com/mattleibow</publisher-url>
+  <src-url>https://github.com/mattleibow/Flurry.Analytics</src-url>
+  <version>2.0.0</version>
+  <summary>Yahoo App Publishing provides a flexible ad-serving platform that is easy to set up and use, enabling you to maximize your ad revenue.</summary>
+  <packages>
+    <package id="Flurry.Ads" version="2.0.0" framework="ios-unified" />
+    <package id="Flurry.Ads" version="2.0.0" framework="android" />
+  </packages>
+  <samples>
+    <sample id="FlurryAdsiOSSample">
+      <name>iOS Ads Sample</name>
+      <summary>iOS Ads Sample</summary>
+    </sample>
+    <sample id="FlurryAdsAndroidSample">
+      <name>Android Ads Sample</name>
+      <summary>Android Ads Sample</summary>
+    </sample>
+  </samples>
+</component>

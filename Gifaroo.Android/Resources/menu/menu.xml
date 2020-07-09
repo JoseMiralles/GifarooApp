@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:id="@+id/URLBar"
+          android:title="@string/URLBar"
+          android:showAsAction="always"
+          android:actionViewClass="android.widget.SearchView"
+          android:inputType="textUri"
+          android:imeOptions="actionDone"
+          android:iconifiedByDefault="true"
+          />
+
+    <item android:id="@+id/homePageButton"
+          android:icon="@drawable/ic_home_white_24dp"
+          android:title="Load HomePage"
+          android:showAsAction="always" />
+
+    <item android:id="@+id/downloadButton"
+          android:icon="@drawable/ic_action_download"
+          android:title="@string/downloadButton"
+          android:showAsAction="always" />
+
+    	  <!-- gif edit activity icons -->
+    <item android:id="@+id/storeButton"
+          android:icon="@drawable/ic_gifaroo_store_white"
+          android:title="Open Store"
+          android:showAsAction="always" />
+
+    <item android:id ="@+id/saveButton"
+		  android:icon="@drawable/ic_save_white_24dp"
+		  android:title="@string/saveButton"
+    	  android:showAsAction="always"/>
+
+    	  <!-- gif edit activity icons -->
+    <item android:id="@+id/editButton"
+    	  android:icon="@drawable/ic_action_edit"
+    	  android:title="@string/editButton"
+    	  android:showAsAction="always"/>
+
+</menu>

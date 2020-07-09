@@ -1,0 +1,162 @@
+<html>
+<head>
+<style>
+
+.spinner {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 15000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 15000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 15000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 15000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.spinnerleft {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 15000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 15000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 15000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spinleft;
+    animation-duration: 15000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spinleft {
+    from { -ms-transform: rotate(360deg); }
+    to { -ms-transform: rotate(0deg); }
+}
+@-moz-keyframes spinleft {
+    from { -moz-transform: rotate(360deg); }
+    to { -moz-transform: rotate(0deg); }
+}
+@-webkit-keyframes spinleft {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0deg); }
+}
+@keyframes spinleft {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}
+
+.title{
+position:absolute;
+left:0;
+top:0;
+}
+
+.spinnerWrapper{
+//height:180;
+overflow:hidden;
+//box-shadow:1px 7px 18px rgba(0, 0, 0, 0.38);
+}
+
+.titleBackground{
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:165px;
+	width:100%;
+	z-index:-1;
+	//box-shadow:1px -1px 18px rgba(0, 0, 0, 0.38);
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+}
+
+    #cogs {
+            position: relative;
+            margin-top: -113px;
+            margin-left: -68px;
+    }
+    .cog {
+        position:absolute;
+    }
+
+</style>
+</head>
+
+<body
+ style="
+ 	position:relative;
+ 	width:300px;
+ 	margin:0;
+ 	//background-color:blueviolet;
+ "
+>
+
+<div class="spinnerWrapper">
+	<img class= "spinner" src="gifaroo-fonts-background_1.png" style="
+    margin-left: -320px;
+    margin-top: -180px;
+    width: 600px;
+    height: 600px;">
+</div>
+
+    <div id="cogs">
+        <img class="cog spinnerleft" src="cog2.png" />
+        <img class="cog spinner" src="cog1.png" style=" margin-left: 96px; margin-top: 36px; " />
+
+        <img class="cog spinner" src="cog1.png" style=" margin-left: 48px; margin-top: 90px; z-index:1" />
+        <img class="cog spinnerleft" src="cog1.png" style=" margin-left: 156px; margin-top: 119px; z-index:1" />
+    </div>
+
+<div  class="title">
+	<img src="title.png">
+	<!--
+	<div class="titleBackground"></div>
+	-->
+</div>
+
+</body>
+</html>

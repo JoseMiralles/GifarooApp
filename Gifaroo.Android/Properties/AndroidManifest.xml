@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.1.7" package="com.Gifaroo.Gifaroo" android:installLocation="auto" android:versionCode="8">
+	<uses-sdk android:minSdkVersion="16" android:targetSdkVersion="23" />
+	<application android:label="Gifaroo" android:theme="@style/Theme.GifarooTheme" android:logo="@drawable/gifaroologomobileheader">
+		<activity android:name="android.loadffmpeg" android:screenOrientation="portrait" />
+		<activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize" android:name="com.apptracker.android.module.AppModuleActivity" android:hardwareAccelerated="false" />
+		<activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:theme="@android:style/Theme.Translucent" />
+		<activity android:name="com.flurry.android.FlurryFullscreenTakeoverActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"></activity>
+		<service android:name="com.google.analytics.tracking.android.CampaignTrackingService" />
+		<receiver android:name="com.google.analytics.tracking.android.CampaignTrackingReceiver" android:exported="true">
+			<intent-filter>
+				<action android:name="com.android.vending.INSTALL_REFERRER" />
+			</intent-filter>
+		</receiver>
+		<bool name="ga_reportUncaughtExceptions">true</bool>
+	</application>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="com.android.vending.BILLING" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+</manifest>

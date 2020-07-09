@@ -1,0 +1,208 @@
+
+body{
+    background: black;
+    width=100%;
+    margin:0;
+}
+
+#backgroundRelativeHolder{
+    position: relative;
+    margin: auto;
+}
+#backgroundRelativeHolder > img{
+    opacity: 0.1;
+    z-index: -2;
+    position: absolute;
+    width: 60%;
+    margin-top: -10px;
+    
+    -moz-transform: scale(2);
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    
+    -webkit-transition: transform 10s ease-in-out;
+    -moz-transition: transform 10s ease-in-out;
+    transition: transform 10s ease-in-out;
+    
+    max-width: 750px;
+}
+
+.siteWrapper{
+    margin:auto;
+    margin-top: 10px;
+    padding-bottom: 0.1em;
+    width: 100%;
+    z-index: -1;
+}
+
+.relative{
+    width: 100%;
+    position: relative;
+    clear: both;
+    height: 269px;
+}
+
+.mainWrapper{
+    width: 95%;
+    height:auto;
+    margin:auto;
+    margin-bottom: 0.5em;
+    
+}
+
+.instructionsText{
+    position: absolute;
+    z-index: 3;
+    top: 24%;
+    left: 9%;
+    width:37%;
+    color: #2D2D2D;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.4em;
+}
+.intructionsTitle{
+    position: absolute;
+    z-index: 3;
+    top: -3%;
+    left: 9%;
+    color:white;
+    font-size: 1.3em;
+    padding: .3em;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.contentSubWrapper{
+    position: static;
+    width:98%;
+    margin: auto;
+    padding: .0em;
+    font-size: 1.3em;
+}
+
+.header{
+    font-size: 3em;
+    color:white;
+    padding: .3em;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.instructions{
+    width:100%;
+    margin-top : .2em;
+    margin-bottom: .2em;
+    display: block;
+}
+
+#homeText{
+    margin: 1em;
+    margin-left: 2em;
+    clear: left;
+    height: 3.5em;
+}
+    
+#giphylogo{
+    height: 3.5em;
+    margin: 1em;
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+
+#giphySearchForm{
+    margin: 0.3em auto;
+    justify-content: center;
+}
+#giphySearchInput{
+-webkit-appearance: none; -moz-appearance: none;
+  display: block;
+  margin: 0;
+    margin-bottom: .3em;
+  width: 100%; height: 2em;
+  line-height: 40px; font-size: 2em;
+  border: 0px solid #bbb;
+    text-indent: 0.7em;
+        background: rgba(255, 255, 255, 0.12);
+    color: white;
+}
+#giphySearchButton{
+ -webkit-appearance: none; -moz-appearance: none;
+ display: block;    
+ font-size: 2em;
+ color: white;
+ font-weight: bold;
+ height: 2em; width: 100%;
+    border: 1px solid white;
+float: right;
+    background: none;
+} #giphySearchButton:active{
+    background: none;
+    background-color: white;
+}
+
+@media (min-device-width: 768px){
+    .relative{
+        height: 176px;
+    }
+    .mainWrapper{
+        width:600px;
+    }
+    
+    .siteWrapper{
+        width:605px;
+    padding:0.5em;
+    }
+    
+    #giphylogo{
+        height: 2em;
+    }
+    
+    #giphySearchForm{
+    margin: 0.3em auto;
+    justify-content: center;
+}
+#giphySearchInput{
+    height: 40px;
+  line-height: 40px;
+    font-size: 17px;
+}
+    
+    .header{
+        font-size: 1.5em;
+    }
+    
+    .instructionsText{
+        font-size: .9em;
+        top:23%;
+}
+    .intructionsTitle{
+    top: -6%;
+    left: 9%;
+        font-size:1.1em;
+        padding: 0;
+}
+    
+    #giphySearchButton{
+        font-size: 1em;
+    }
+
+#backgroundRelativeHolder > img{
+    width: 55%;
+}
+    
+    #homeText{
+    margin: 0.7em;
+    margin-left: 1em;
+    height: 2.5em;
+        margin-bottom: none !important;
+    }
+    
+}
+
+@media (max-device-width: 768px){
+    .siteWrapper{
+        padding-bottom: 1em;
+        padding-top: 1.3em;
+    }
+}

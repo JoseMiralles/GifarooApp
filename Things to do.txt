@@ -1,0 +1,24 @@
+
+The following are things that need to be implemented ASAP::::
+
+Support for other file-types:
+	
+	- Download:
+		-- Nodes with any tag ending in gif, webm, gifv, or mp4.
+			This is because sites like tumbl store the image source in tags like "file-srcs:'awfeewaf.webm'"
+		-- Check the clicked node and it's child nodes.
+		-- Use a JavaScript library that supports longclick withot messing with drag and drop functionality.
+
+	- Conversion:
+		-- There might not be a need to convert, check if files can be loaded into a webview, and if they work fine in the save activity.
+
+
+
+
+Better GifarooImageView highlighter on editGifActivity
+
+	- Something with rotation functionality and a white or blue border.
+
+
+
+Text Timeline, allow users to select when text appears and dissappears in a gif.

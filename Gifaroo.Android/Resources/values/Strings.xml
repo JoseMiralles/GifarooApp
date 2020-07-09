@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Click Me!</string>
+	<string name="app_name">Gifaroo</string>
+
+	<!--Action Bar strings-->
+	<string name="downloadButton">Get Gifs</string>
+	<string name="URLBar">URL/Search</string>
+	<string name="search_hint">"football" or "Tumblr.com"</string>
+	<string name="editButton">Edit selected Gif</string>
+	<string name="saveButton">Save</string>
+
+	<!-- Action Bar tab strings -->
+	<string name="backgroundTab">Background</string>
+	<string name="textTab">Text</string>
+	<string name="watermarkTab">Watermark</string>
+
+	<string name="font_prompt">Select a font</string>
+	<string-array name="font_array">
+	<item>RobotoThin</item>
+	<item>RobotoThinItalic</item>
+	<item>RobotoLight</item>
+	<item>RobotoLightItalic</item>
+	<item>RobotoRegular</item>
+	<item>RobotoItalic</item>
+	<item>RobotoMedium</item>
+	<item>RobotoMediumItalic</item>
+	<item>RobotoBold</item>
+	<item>RobotoBoldItalic</item>
+	<item>RobotoBlack</item>
+	<item>RobotoBlackItalic</item>
+	<item>RobotoCondensed</item>
+	<item>RobotoCondensedItalic</item>
+	<item>RobotoCondensedBold</item>
+	<item>RobotoCondensedBoldItalic</item>
+	</string-array>
+
+</resources>
