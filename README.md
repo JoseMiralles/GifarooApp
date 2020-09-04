@@ -1,5 +1,6 @@
 # Gifaroo
-This app allowed users to edit gifs from any website, edit it, and then they were able to share it as a video file to places like Instagram.
+This app allowed users to edit gifs from any website, edit them, and then they were able to share them as video files to places like Instagram.
+
 (I took it down because of compatibility issues with most newer phones that have the ARMV8 architecture) And because it became irrelevant.
 
 ## App Store Screenshots
