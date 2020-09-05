@@ -3,7 +3,7 @@ This app allowed users to edit gifs from any website, edit them, and then they w
 
 (I took it down because of compatibility issues with most newer phones that have the ARMV8 architecture) And because it became irrelevant.
 
-# App Store Screenshots
+# Play Store Screenshots
 ![Store top image](https://github.com/JoseMiralles/GifarooApp/blob/master/Store%20assets/feature-graphic.jpg?raw=true)
 ![Backgrounds](https://github.com/JoseMiralles/GifarooApp/blob/master/Store%20assets/screenshot-backgrounds.jpg?raw=true)
 ![Browse](https://github.com/JoseMiralles/GifarooApp/blob/master/Store%20assets/screenshot-browse.jpg?raw=true)
